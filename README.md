@@ -2,28 +2,33 @@
 
 A small and experimental Java Wunderground Pollen API library.
 
-## Some Description
+## What it do:
 
-*Insert better description here*
+Gets you four date pollen prediction in the United States using the Wunderground API using simply your zipcode.
 
-Currently there are no existing APIs on the web that gets live pollen data with predictions. I wrote this library last year in an Android project I did also called Pollen Buddy where it allowed allergy sufferers like me to monitor pollen levels on a daily and multiple-day basis. I decided to open source this library because a few people expressed their interest in using it after I wrote about it [here](http://www.jackyliang.com/jackyresumecoding/2014/6/1/work-android-development-and-life). 
+## This library gives you:
 
-## Included Functionality
+1. `String` - Today's date
+2. `String` - Today's primary pollen type
+3. `String` - Name of the city requested 
+4. `Collection<String>` - Four days of pollen index predictions
+5. `Set<Date>` - Four dates including today
+6. `Integer` - Entered zipcode
 
-This library returns: 
+## More Info You Don't Care About
 
-1. Today's date
+Currently there are no existing APIs on the web that gets live pollen data with predictions. This gets you that.
 
-2. Today's primary pollen 
-
-3. Name of the city requested based on zipcode
-
-4. Four days of pollen level predictions in the form of a `Double`
-
-5. Four dates including today
+I am open sourcing this library I wrote last year because a few people expressed their interest in using it after I wrote about it in my [blog](http://www.jackyliang.com/jackyresumecoding/2014/6/1/work-android-development-and-life). 
 
 ## Note
 
-You can use this anywhere the MIT license permits. Please kindly credit me when you use this library, and if possible, contribute back patches when necessary.
+You can use this anywhere the MIT license permits. 
 
-Do not, I repeat, do **NOT** use this library in a live production settings! It uses JSoup to scrape HTML directly off of Wunderground's Pollen site, and Wunderground could tweak their HTML just a bit, and it would break this library. I am not responsible for you losing millions of dollars.
+Please kindly credit me, however, when you use this library, and if possible, contribute back patches when/if necessary.
+
+Do not, I repeat, do **NOT** use this library in a live production settings! 
+
+It uses JSoup to scrape HTML directly off of Wunderground's Pollen site, and Wunderground could tweak their HTML/CSS just a bit, and it would break this library. I am not responsible for you losing millions of dollars.
+
+*Actually that would be pretty cool.*
